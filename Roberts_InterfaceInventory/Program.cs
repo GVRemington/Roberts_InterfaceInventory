@@ -28,17 +28,22 @@ Console.WriteLine("\n");
 Console.Write(ProductList.menu);
 menuSelection = Console.ReadKey();
 while (keepGoing)
-    {   
-        if (menuSelection.Key == ConsoleKey.D7)
-            {
-                keepGoing = false;
-                Console.WriteLine("\tGoodBye");
-            }
-        else
-            {
-                myShipper.whoTheHellKnows(menuSelection);
-            }
-        
+    {
+    if (menuSelection.Key == ConsoleKey.D7)
+    {
+        keepGoing = false;
+        Console.WriteLine("\tGoodBye");
+        Environment.Exit(0);
+    }
+    else if (menuSelection.Key > ConsoleKey.D0 && menuSelection.Key < ConsoleKey.D5)
+    {
+        myShipper.whichItem(menuSelection);
+    }
+    else if (menuSelection.Key == ConsoleKey.D5 || menuSelection.Key == ConsoleKey.D6)
+    {
+        Console.WriteLine(myShipper.readArray(menuSelection));
+    }
+        Console.Write("\n\tPlease Make Another Selection");
         menuSelection = Console.ReadKey();
 
     }
