@@ -17,7 +17,7 @@ namespace Roberts_InterfaceInventory
                    "\t4: Add Crackers to the Shipment         (shipping cost $0.57)\n" +
                    "\t5: List Shipment Items\n" +
                    "\t6: Compute Shipping Charges\n" +
-                   "\t7: Exit ";
+                   "\t7: Exit \n";
         }
     
 }
