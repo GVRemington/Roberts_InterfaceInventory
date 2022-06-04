@@ -43,9 +43,11 @@ while (keepGoing)
             Console.WriteLine("\t\nGoodBye, Thank You For Shopping");
             Environment.Exit(0);
             break;
+        default:Console.WriteLine("Invalid Selection, Please Try Again");
+            break;
     }
     Console.WriteLine("\t\nPlease Make Another Selection...");
-    menuSelection = Console.ReadKey();
+    menuSelection=Console.ReadKey();
     }
           
           

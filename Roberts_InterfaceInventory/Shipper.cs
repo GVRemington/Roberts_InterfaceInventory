@@ -27,22 +27,22 @@ namespace Roberts_InterfaceInventory
                     switch (MenuSelection.Key)
                     {
                         case ConsoleKey.D1:
-                            Bicycle bob = new Bicycle();
+                            IShippable bob = new Bicycle();
                             myShipment[i] = bob;
                             i++;
                             break;
                         case ConsoleKey.D2:
-                            LawnMower fred = new LawnMower();
+                            IShippable fred = new LawnMower();
                             myShipment[i] = fred;
                             i++;
                             break;
                         case ConsoleKey.D3:
-                            BaseballGlove ralph = new BaseballGlove();
+                            IShippable ralph = new BaseballGlove();
                             myShipment[i] = ralph;
                             i++;
                             break;
                         case ConsoleKey.D4:
-                            Crackers crackHead = new Crackers();
+                            IShippable crackHead = new Crackers();
                             myShipment[i] = crackHead;
                             i++;
                             break;
@@ -63,7 +63,6 @@ namespace Roberts_InterfaceInventory
             int howManyGloves = 0;
             int howManyCrackers = 0;
             decimal shippingTotal = 0;
-            int i = 0;
             string outPut;
             switch (_menuSelection.Key)
             {

@@ -14,14 +14,13 @@ namespace Roberts_InterfaceInventory
         public decimal ShipCost
         {
             get
-            { return shipCost; }
-            set
-            { shipCost = 0.57M; }
+            { return 0.57M; }
+          
         }
         public string Product
         {
-            get { return productName; }
-            set { productName = "Crackers"; }
+            get { return "Crackers"; }
+            
         }
     }
 }
